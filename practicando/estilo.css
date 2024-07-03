@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.border{
+    border: solid red 5px !important;
+}
+.tamano{
+    font-size: 4.5rem !important;
+    background-image: url('./luminosidad.jpg'); /* Ruta a tu imagen */
+    -webkit-background-clip: text; /* Clip de fondo para WebKit (Safari/Chrome) */
+    background-clip: text; /* Clip de fondo para navegadores estándar */
+    color: transparent; /* Color transparente del texto */
+    filter: brightness(170%);
+    background-size: cover;
+}
+
+.tamano::after{
+    content: "";
+    display: block;
+    background-image: url("./luminosidad.jpg");
+    width: 100%;
+    height: 1vh;
+    background-size:cover;
+    filter: brightness(200%);    
+}
+.input{
+    margin-top: 4%;
+    width: 30%;
+    height: 6vh;
+    border: none;
+    border-bottom: solid #000 3px;
+    background: transparent;
+
+}
+.input:focus{
+    outline: none;
+    border-bottom: solid #000 3px;
+}
+.texto{
+    margin-top: 4%;
+    height: auto;
+    text-align: center;
+    width: 50%;
+    margin-right: 5%;
+}
+.contenedor_info{
+    display: flex;
+    flex-direction: row;
+}
+.parrafos_del_texto{
+   background-color: rgb(101, 104, 104);
+   min-width: 30%;
+   border-radius: 12px;
+   font-size: 1.1rem;
+   width: auto;
+   height: 5vh;
+   text-align: center;
+   cursor: pointer;
+   color: aliceblue;
+
+}
+.parrafo{
+    width: 100%;
+    height: 60vh;
+    border: solid rgb(113, 110, 110) 1px;
+    font-size:15px;
+    padding: 2%;
+    overflow-y: hidden;
+}
